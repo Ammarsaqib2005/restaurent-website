@@ -1,0 +1,151 @@
+:root {
+  --yellow: #ffd700;
+  --white: #ffffff;
+  --red: #ff4c29;
+  --green: #4caf50;
+  --darkcharcoal: #1C1C1C;
+  --darkgrey: #111111;
+}
+*{
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.landing {
+  background-image: url("bg.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: var(--white);
+  padding: 1em;
+}
+header a {
+  text-decoration: none;
+  color: var(--white);
+}
+header {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1em;
+  row-gap: 1em;
+}
+header h2{
+  margin-right: 0.3em;
+}
+#logo {
+  display: flex;
+  flex: 3;
+  font-size: 1.75em;
+  font-family: italic;
+  color: var(--yellow);
+  min-width: 260px;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  flex: 3;
+  font-size: small;
+  align-items: center;
+}
+nav a {
+  display: flex;
+  flex-basis: 100px;
+  min-width: 120px;
+}
+nav a:hover {
+  color: var(--green);
+}
+.sidebar{
+  height: 20px;
+  width: 20px;
+  display: flex;
+  flex: 1;
+  gap: 1em;
+  padding-top: .5em;
+}
+.sidebar:hover{
+  cursor: pointer;
+  color: var(--green);
+}
+.maintext {
+  padding-top: 7em;
+  padding-left: 1em;
+}
+
+.container1 {
+  color: var(--red);
+  font-size: 2em;
+  font-weight: bold;
+  font-family: 'Pacifico', cursive;
+}
+.container2 {
+  width: 40%;
+  text-align: left;
+  color: var(--white);
+  margin-top: 1em;
+  font-family: 'roboto', sans-serif;
+}
+.maintext button {
+  margin-top: 1.6em;
+  border-radius: 10px;
+  padding: 0.5em;
+  color: var(--white);
+  background-color: var(--green);
+}
+.menuhead {
+  text-align: center;
+  font-family: italic;
+  background-color: var(--darkcharcoal);
+  color: var(--red);
+}
+#menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+  background-color: var(--darkcharcoal);
+  color: var(--white);
+}
+#menu th {
+  color: var(--green);
+  font-size: 1.25em;
+}
+table {
+  width: 100%;
+  padding: 1em;
+}
+#menu tr {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.8em;
+}
+#menu td:nth-child(1) {
+  flex: 1;
+  justify-self: left;
+}
+#menu td:nth-child(2) {
+  justify-self: right;
+}
+#locheading{
+  color: var(--red);
+  background-color: var(--darkcharcoal);
+  text-align: center;
+}
+#locations{
+  color: var(--white);
+  background-color: var(--darkcharcoal);
+  display: flex;
+  flex-wrap: wrap;
+}
+#locations h2{
+  color: var(--green);
+  margin-bottom: .8em;
+}
+#locations div{
+  flex: 1;
+  padding: 1em;
+  min-width: 190px;
+}
+.copyright{
+  background-color: var(--darkgrey);
+  color: var(--white);
+}
